@@ -38,3 +38,7 @@ p {
     background: #2196F3;
     color: white;
   }
+
+  clicavel:hover{
+    cursor: pointer;
+  }

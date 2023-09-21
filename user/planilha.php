@@ -21,19 +21,19 @@ $sheet->setCellValue('D1', 'Canal');
 $sheet->setCellValue('E1', 'Preço de venda');
 $sheet->setCellValue('F1', 'Preço promocional');
 $sheet->setCellValue('G1', 'Data de termino da promoção');
-$sheet->setCellValue('H1', 'Taxa fixa');
-$sheet->setCellValue('I1', 'Comissão');
-$sheet->setCellValue('J1', 'Imposto');
-$sheet->setCellValue('K1', 'Frete');
-$sheet->setCellValue('L1', 'Repasse');
-$sheet->setCellValue('M1', 'Marg. Contribuição');
-$sheet->setCellValue('N1', '% de lucro');
+// $sheet->setCellValue('H1', 'Taxa fixa');
+// $sheet->setCellValue('I1', 'Comissão');
+// $sheet->setCellValue('J1', 'Imposto');
+// $sheet->setCellValue('K1', 'Frete');
+// $sheet->setCellValue('L1', 'Repasse');
+// $sheet->setCellValue('M1', 'Marg. Contribuição');
+// $sheet->setCellValue('N1', '% de lucro');
 //$sheet->setCellValue('M1', 'Saúde do anúncio');
 
 $row = 2;
 
 $IDSITE = 'MLB';
-$IDUSER = '1128872761';
+$IDUSER = $_SESSION['contavinculada'];
 $response = getAdsAccount($IDSITE, $IDUSER);
 
 //Paginacao
@@ -74,15 +74,14 @@ foreach ($response['results'] as $res) {
 
     // $promo = filtroPromotionData($_SESSION['user']['access_token'],$res['id']);
     // $sheet->setCellValue('G' . $row, $promo);
-    $sheet->setCellValue('G' . $row, '');
-
-    $sheet->setCellValue('H' . $row, "");
-    $sheet->setCellValue('I' . $row, "");
-    $sheet->setCellValue('J' . $row, "");
-    $sheet->setCellValue('K' . $row, "");
-    $sheet->setCellValue('L' . $row, "");
-    $sheet->setCellValue('M' . $row, "");
-    $sheet->setCellValue('N' . $row, "");
+    // $sheet->setCellValue('G' . $row, '');
+    // $sheet->setCellValue('H' . $row, "");
+    // $sheet->setCellValue('I' . $row, "");
+    // $sheet->setCellValue('J' . $row, "");
+    // $sheet->setCellValue('K' . $row, "");
+    // $sheet->setCellValue('L' . $row, "");
+    // $sheet->setCellValue('M' . $row, "");
+    // $sheet->setCellValue('N' . $row, "");
     //$sheet->setCellValue('N' . $row, $res['health']);
     // Preencha as outras células aqui conforme necessário
     $row++;
