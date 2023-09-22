@@ -19,7 +19,7 @@
             <div class="mb-3">
             <?php if (isset($_SESSION['alert-contavinculada'])) { ?><p><?php echo $_SESSION['alert-contavinculada']; unset($_SESSION['alert-contavinculada']); } ?></p>
                 <label class="form-label">Código de anúncio:</label>
-                <input type="text" class="form-control" name="codigoanuncio">
+                <input type="text" class="form-control" name="codigoanuncio" required>
                 <div class="form-text">Informe o MLB do anúncio para vincular sua conta.</div>
             </div>
             <button type="submit" class="btn btn-primary">Vincular</button>

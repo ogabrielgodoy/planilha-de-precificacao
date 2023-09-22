@@ -15,7 +15,7 @@ function getItems($IDITEM){
     if ($response === false) {
         //$error = error_get_last();
         //echo "Erro na consulta à API: " . $error['message'];
-        $condicao = 'naovalido';
+        $condicao = false;
         return $condicao;
     }else{
         $condicao = 'valido';
